@@ -1,0 +1,3 @@
+[console_scripts]
+yolo12_2d_detector = golfcart_yolo2d.yolo12_2d_detector_node:main
+
