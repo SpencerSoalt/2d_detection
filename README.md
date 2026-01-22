@@ -32,3 +32,9 @@ ros2 launch golfcart_yolo2d yolo12_2d_detector.launch.py
 
 
 ros2 launch foxglove_bridge foxglove_bridge_launch.xml address:=0.0.0.0 port:=8765
+
+
+
+ros2 launch golfcart_yolo2d yolo12_2d_detector.launch.py --ros-args \
+  -p model:=yolo12l.pt
+
