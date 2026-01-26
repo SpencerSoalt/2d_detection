@@ -14,17 +14,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     tmux \
     vim \
     ros-humble-rosbag2 \
-    # ros-humble-rosbag2-storage-default-plugins \
     ros-humble-rosbag2-storage-mcap \
     ros-humble-image-transport \
     ros-humble-compressed-image-transport \
     ros-humble-foxglove-bridge \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/* 
     
 
 # ---- Python deps ----
-# ultralytics pulls in torch deps via pip (CPU by default). For GPU, see notes below.
 RUN python3 -m pip install --no-cache-dir --upgrade pip wheel && \
+# Cuda 11.8 GPU version of torch (uncomment to enable GPU support)
+    python3 -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124 && \
+    python3 -m pip install --no-cache-dir nvidia-tensorrt && \
     python3 -m pip install --no-cache-dir ultralytics && \
     python3 -m pip uninstall -y opencv-python opencv-python-headless opencv-contrib-python || true && \
     python3 -m pip install --no-cache-dir --force-reinstall "numpy==1.26.4"
@@ -34,7 +37,7 @@ ENV WS=/ws
 WORKDIR ${WS}
 
 # Copy your package into the workspace
-COPY src ${WS}/src/golfcart_yolo2d
+COPY src ${WS}/src/detections_2d
 
 # rosdep (safe even if some keys already satisfied)
 RUN rosdep init 2>/dev/null || true && rosdep update && \
