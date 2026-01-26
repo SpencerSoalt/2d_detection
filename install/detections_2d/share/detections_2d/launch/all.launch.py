@@ -1,1 +1,0 @@
-/ws/build/detections_2d/launch/all.launch.py

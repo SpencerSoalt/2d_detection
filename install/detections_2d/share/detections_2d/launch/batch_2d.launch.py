@@ -1,1 +1,0 @@
-/ws/build/detections_2d/launch/batch_2d.launch.py
