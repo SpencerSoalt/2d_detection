@@ -1,1 +1,41 @@
 bags/
+# --- ROS Build & Install Directories ---
+build/
+devel/
+install/
+log/
+.catkin_workspace
+.catkin_tools/
+
+# --- Generated binaries and libraries ---
+bin/
+lib/
+msg_gen/
+srv_gen/
+msg/*Action.msg
+msg/*ActionFeedback.msg
+msg/*ActionGoal.msg
+msg/*ActionResult.msg
+*_action.cpp
+
+# --- C++ Artifacts ---
+*.o
+*.so
+*.a
+*.dylib
+
+# --- Python Artifacts ---
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+
+# --- IDE & Editor Configs (Optional but Recommended) ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# --- Qt Creator ---
+CMakeLists.txt.user
