@@ -57,12 +57,20 @@ class YOLOv12BatchDetectionNode(Node):
         self.img2 = None
         self.img1_header = None
         self.img2_header = None
-        
+
+        # Best-effort QoS (good for high-rate camera streams)
+        image_qos = QoSProfile(
+        history=HistoryPolicy.KEEP_LAST,
+        depth=5,
+        reliability=ReliabilityPolicy.BEST_EFFORT,
+        durability=DurabilityPolicy.VOLATILE,
+        )
+
         # Subscribers
         self.sub1 = self.create_subscription(
-            Image, camera1_topic, self.camera1_callback, 10)
+            Image, camera1_topic, self.camera1_callback, image_qos)
         self.sub2 = self.create_subscription(
-            Image, camera2_topic, self.camera2_callback, 10)
+            Image, camera2_topic, self.camera2_callback, image_qos)
         
         # Publishers for detections
         self.pub1 = self.create_publisher(
