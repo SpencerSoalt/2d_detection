@@ -20,13 +20,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-foxglove-bridge \
     libgl1-mesa-glx \
     libglib2.0-0 \
+    ros-humble-rmw-cyclonedds-cpp \
     && rm -rf /var/lib/apt/lists/* 
-    
+
+# Set DDS/RMW defaults
+ENV ROS_DOMAIN_ID=0
+ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 # ---- Python deps ----
 RUN python3 -m pip install --no-cache-dir --upgrade pip wheel && \
 # Cuda 11.8 GPU version of torch (uncomment to enable GPU support)
-    python3 -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124 && \
+    python3 -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121 && \
     python3 -m pip install --no-cache-dir nvidia-tensorrt && \
     python3 -m pip install --no-cache-dir ultralytics && \
     python3 -m pip uninstall -y opencv-python opencv-python-headless opencv-contrib-python || true && \
