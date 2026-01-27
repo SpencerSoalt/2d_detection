@@ -9,6 +9,7 @@ import numpy as np
 import torch
 from ultralytics import YOLO
 import cv2
+from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
 
 
 class YOLOv12BatchDetectionNode(Node):
