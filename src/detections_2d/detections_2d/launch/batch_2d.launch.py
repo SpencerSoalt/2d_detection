@@ -22,19 +22,19 @@ def generate_launch_description():
     
     camera2_topic_arg = DeclareLaunchArgument(
         'camera2_topic',
-        default_value='/camera2/image_raw',
+        default_value='/camera6/image_raw',
         description='Second camera image topic'
     )
     
     confidence_threshold_arg = DeclareLaunchArgument(
         'confidence_threshold',
-        default_value='0.5',
+        default_value='0.3',
         description='Detection confidence threshold'
     )
     
     device_arg = DeclareLaunchArgument(
         'device',
-        default_value='cpu',
+        default_value='cuda',
         description='Device to run inference on (cuda or cpu)'
     )
     
