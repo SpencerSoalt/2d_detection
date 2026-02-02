@@ -1,0 +1,37 @@
+[0.715s] Invoking command in '/ws/src/detections_2d/detections_2d/detections_2d': PYTHONPATH=/ws/build/detections_2d/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ws/install/detections_2d/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/detections_2d build --build-base /ws/build/detections_2d/build install --record /ws/build/detections_2d/install.log --single-version-externally-managed install_data
+[0.988s] running egg_info
+[0.988s] writing ../../../../build/detections_2d/detections_2d.egg-info/PKG-INFO
+[0.988s] writing dependency_links to ../../../../build/detections_2d/detections_2d.egg-info/dependency_links.txt
+[0.989s] writing entry points to ../../../../build/detections_2d/detections_2d.egg-info/entry_points.txt
+[0.989s] writing requirements to ../../../../build/detections_2d/detections_2d.egg-info/requires.txt
+[0.989s] writing top-level names to ../../../../build/detections_2d/detections_2d.egg-info/top_level.txt
+[0.991s] reading manifest file '../../../../build/detections_2d/detections_2d.egg-info/SOURCES.txt'
+[0.993s] writing manifest file '../../../../build/detections_2d/detections_2d.egg-info/SOURCES.txt'
+[0.993s] running build
+[0.993s] running build_py
+[0.993s] copying detections_2d/batch_2d.py -> /ws/build/detections_2d/build/lib/detections_2d
+[0.994s] copying detections_2d/ov_batch_2d.py -> /ws/build/detections_2d/build/lib/detections_2d
+[0.994s] copying detections_2d/og_batch_2d.py -> /ws/build/detections_2d/build/lib/detections_2d
+[0.994s] running install
+[0.995s] running install_lib
+[0.996s] copying /ws/build/detections_2d/build/lib/detections_2d/batch_2d.py -> /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d
+[0.997s] copying /ws/build/detections_2d/build/lib/detections_2d/ov_batch_2d.py -> /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d
+[0.997s] copying /ws/build/detections_2d/build/lib/detections_2d/og_batch_2d.py -> /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d
+[0.997s] byte-compiling /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d/batch_2d.py to batch_2d.cpython-310.pyc
+[0.998s]   File "/ws/install/detections_2d/lib/python3.10/site-packages/detections_2d/batch_2d.py", line 1
+[0.998s]     mport rclpy
+[0.998s]           ^^^^^
+[0.998s] SyntaxError: invalid syntax
+[0.998s] 
+[0.998s] byte-compiling /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d/ov_batch_2d.py to ov_batch_2d.cpython-310.pyc
+[1.000s] byte-compiling /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d/og_batch_2d.py to og_batch_2d.cpython-310.pyc
+[1.001s] running install_data
+[1.001s] running install_egg_info
+[1.003s] removing '/ws/install/detections_2d/lib/python3.10/site-packages/detections_2d-0.0.1-py3.10.egg-info' (and everything under it)
+[1.003s] Copying ../../../../build/detections_2d/detections_2d.egg-info to /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d-0.0.1-py3.10.egg-info
+[1.004s] running install_scripts
+[1.035s] Installing batch_2d script to /ws/install/detections_2d/lib/detections_2d
+[1.035s] Installing old_batch script to /ws/install/detections_2d/lib/detections_2d
+[1.035s] Installing serialized script to /ws/install/detections_2d/lib/detections_2d
+[1.035s] writing list of installed files to '/ws/build/detections_2d/install.log'
+[1.064s] Invoked command in '/ws/src/detections_2d/detections_2d/detections_2d' returned '0': PYTHONPATH=/ws/build/detections_2d/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ws/install/detections_2d/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/detections_2d build --build-base /ws/build/detections_2d/build install --record /ws/build/detections_2d/install.log --single-version-externally-managed install_data

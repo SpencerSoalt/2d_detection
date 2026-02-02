@@ -1,0 +1,5 @@
+  File "/ws/install/detections_2d/lib/python3.10/site-packages/detections_2d/batch_2d.py", line 1
+    mport rclpy
+          ^^^^^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,69 @@
+[0.000000] (-) TimerEvent: {}
+[0.000345] (detections_2d) JobQueued: {'identifier': 'detections_2d', 'dependencies': OrderedDict()}
+[0.000996] (detections_2d) JobStarted: {'identifier': 'detections_2d'}
+[0.100055] (-) TimerEvent: {}
+[0.200378] (-) TimerEvent: {}
+[0.300812] (-) TimerEvent: {}
+[0.401110] (-) TimerEvent: {}
+[0.501345] (-) TimerEvent: {}
+[0.601592] (-) TimerEvent: {}
+[0.701900] (-) TimerEvent: {}
+[0.778596] (detections_2d) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/ws/build/detections_2d/build'], 'cwd': '/ws/build/detections_2d', 'env': {'TMUX': '/tmp/tmux-0/default,26,0', 'WS': '/ws', 'HOSTNAME': 'avlc-0025', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/ws/src/detections_2d/detections_2d/detections_2d/detections_2d', 'TERM_PROGRAM_VERSION': '3.2a', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/ws/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'screen', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'tmux', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/ws/install/detections_2d:/opt/ros/humble', 'SHELL': '/bin/bash', 'PWD': '/ws/build/detections_2d', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ws/build/detections_2d/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ws/install/detections_2d/lib/python3.10/site-packages:/ws/build/detections_2d:/ws/install/detections_2d/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'TMUX_PANE': '%0'}, 'shell': False}
+[0.802010] (-) TimerEvent: {}
+[0.902293] (-) TimerEvent: {}
+[1.002561] (-) TimerEvent: {}
+[1.078425] (detections_2d) StdoutLine: {'line': b'running develop\n'}
+[1.102683] (-) TimerEvent: {}
+[1.203047] (-) TimerEvent: {}
+[1.228858] (detections_2d) StdoutLine: {'line': b'Removing /ws/install/detections_2d/lib/python3.10/site-packages/detections-2d.egg-link (link to .)\n'}
+[1.257266] (detections_2d) CommandEnded: {'returncode': 0}
+[1.258532] (detections_2d) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../build/detections_2d', 'build', '--build-base', '/ws/build/detections_2d/build', 'install', '--record', '/ws/build/detections_2d/install.log', '--single-version-externally-managed', 'install_data', '--force'], 'cwd': '/ws/src/detections_2d/detections_2d/detections_2d', 'env': {'TMUX': '/tmp/tmux-0/default,26,0', 'WS': '/ws', 'HOSTNAME': 'avlc-0025', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/ws/src/detections_2d/detections_2d/detections_2d/detections_2d', 'TERM_PROGRAM_VERSION': '3.2a', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/ws/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'screen', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'tmux', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/ws/install/detections_2d:/opt/ros/humble', 'SHELL': '/bin/bash', 'PWD': '/ws/build/detections_2d', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ws/build/detections_2d/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ws/install/detections_2d/lib/python3.10/site-packages:/ws/build/detections_2d:/ws/install/detections_2d/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'TMUX_PANE': '%0'}, 'shell': False}
+[1.303158] (-) TimerEvent: {}
+[1.403390] (-) TimerEvent: {}
+[1.503653] (-) TimerEvent: {}
+[1.520948] (detections_2d) StdoutLine: {'line': b'running egg_info\n'}
+[1.521793] (detections_2d) StdoutLine: {'line': b'writing ../../../../build/detections_2d/detections_2d.egg-info/PKG-INFO\n'}
+[1.522069] (detections_2d) StdoutLine: {'line': b'writing dependency_links to ../../../../build/detections_2d/detections_2d.egg-info/dependency_links.txt\n'}
+[1.522248] (detections_2d) StdoutLine: {'line': b'writing entry points to ../../../../build/detections_2d/detections_2d.egg-info/entry_points.txt\n'}
+[1.522423] (detections_2d) StdoutLine: {'line': b'writing requirements to ../../../../build/detections_2d/detections_2d.egg-info/requires.txt\n'}
+[1.522531] (detections_2d) StdoutLine: {'line': b'writing top-level names to ../../../../build/detections_2d/detections_2d.egg-info/top_level.txt\n'}
+[1.530289] (detections_2d) StdoutLine: {'line': b"reading manifest file '../../../../build/detections_2d/detections_2d.egg-info/SOURCES.txt'\n"}
+[1.531654] (detections_2d) StdoutLine: {'line': b"writing manifest file '../../../../build/detections_2d/detections_2d.egg-info/SOURCES.txt'\n"}
+[1.531851] (detections_2d) StdoutLine: {'line': b'running build\n'}
+[1.531962] (detections_2d) StdoutLine: {'line': b'running build_py\n'}
+[1.532182] (detections_2d) StdoutLine: {'line': b'creating /ws/build/detections_2d/build\n'}
+[1.532292] (detections_2d) StdoutLine: {'line': b'creating /ws/build/detections_2d/build/lib\n'}
+[1.532398] (detections_2d) StdoutLine: {'line': b'creating /ws/build/detections_2d/build/lib/detections_2d\n'}
+[1.532545] (detections_2d) StdoutLine: {'line': b'copying detections_2d/batch_2d.py -> /ws/build/detections_2d/build/lib/detections_2d\n'}
+[1.532635] (detections_2d) StdoutLine: {'line': b'copying detections_2d/__init__.py -> /ws/build/detections_2d/build/lib/detections_2d\n'}
+[1.532725] (detections_2d) StdoutLine: {'line': b'copying detections_2d/serialized.py -> /ws/build/detections_2d/build/lib/detections_2d\n'}
+[1.532843] (detections_2d) StdoutLine: {'line': b'copying detections_2d/old_batch.py -> /ws/build/detections_2d/build/lib/detections_2d\n'}
+[1.533168] (detections_2d) StdoutLine: {'line': b'running install\n'}
+[1.533545] (detections_2d) StdoutLine: {'line': b'running install_lib\n'}
+[1.534412] (detections_2d) StdoutLine: {'line': b'creating /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d\n'}
+[1.534676] (detections_2d) StdoutLine: {'line': b'copying /ws/build/detections_2d/build/lib/detections_2d/batch_2d.py -> /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d\n'}
+[1.534876] (detections_2d) StdoutLine: {'line': b'copying /ws/build/detections_2d/build/lib/detections_2d/__init__.py -> /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d\n'}
+[1.534972] (detections_2d) StdoutLine: {'line': b'copying /ws/build/detections_2d/build/lib/detections_2d/serialized.py -> /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d\n'}
+[1.535064] (detections_2d) StdoutLine: {'line': b'copying /ws/build/detections_2d/build/lib/detections_2d/old_batch.py -> /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d\n'}
+[1.535465] (detections_2d) StdoutLine: {'line': b'byte-compiling /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d/batch_2d.py to batch_2d.cpython-310.pyc\n'}
+[1.536976] (detections_2d) StdoutLine: {'line': b'byte-compiling /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d/__init__.py to __init__.cpython-310.pyc\n'}
+[1.537156] (detections_2d) StdoutLine: {'line': b'byte-compiling /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d/serialized.py to serialized.cpython-310.pyc\n'}
+[1.538811] (detections_2d) StdoutLine: {'line': b'byte-compiling /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d/old_batch.py to old_batch.cpython-310.pyc\n'}
+[1.540324] (detections_2d) StdoutLine: {'line': b'running install_data\n'}
+[1.540630] (detections_2d) StdoutLine: {'line': b'copying resource/detections_2d -> /ws/install/detections_2d/share/ament_index/resource_index/packages\n'}
+[1.541096] (detections_2d) StdoutLine: {'line': b'copying package.xml -> /ws/install/detections_2d/share/detections_2d\n'}
+[1.541293] (detections_2d) StdoutLine: {'line': b'copying launch/all.launch.py -> /ws/install/detections_2d/share/detections_2d/launch\n'}
+[1.541643] (detections_2d) StdoutLine: {'line': b'copying launch/old_batch.launch.py -> /ws/install/detections_2d/share/detections_2d/launch\n'}
+[1.541946] (detections_2d) StdoutLine: {'line': b'copying launch/batch_2d.launch.py -> /ws/install/detections_2d/share/detections_2d/launch\n'}
+[1.542246] (detections_2d) StdoutLine: {'line': b'copying launch/serialized.launch.py -> /ws/install/detections_2d/share/detections_2d/launch\n'}
+[1.542517] (detections_2d) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.544671] (detections_2d) StdoutLine: {'line': b'Copying ../../../../build/detections_2d/detections_2d.egg-info to /ws/install/detections_2d/lib/python3.10/site-packages/detections_2d-0.0.1-py3.10.egg-info\n'}
+[1.545830] (detections_2d) StdoutLine: {'line': b'running install_scripts\n'}
+[1.571059] (detections_2d) StdoutLine: {'line': b'Installing batch_2d script to /ws/install/detections_2d/lib/detections_2d\n'}
+[1.571332] (detections_2d) StdoutLine: {'line': b'Installing old_batch script to /ws/install/detections_2d/lib/detections_2d\n'}
+[1.571499] (detections_2d) StdoutLine: {'line': b'Installing serialized script to /ws/install/detections_2d/lib/detections_2d\n'}
+[1.571847] (detections_2d) StdoutLine: {'line': b"writing list of installed files to '/ws/build/detections_2d/install.log'\n"}
+[1.595898] (detections_2d) CommandEnded: {'returncode': 0}
+[1.603803] (-) TimerEvent: {}
+[1.613840] (detections_2d) JobEnded: {'identifier': 'detections_2d', 'rc': 0}
+[1.614636] (-) EventReactorShutdown: {}

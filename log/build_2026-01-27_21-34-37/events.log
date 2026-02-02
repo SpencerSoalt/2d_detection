@@ -1,0 +1,47 @@
+[0.000000] (-) TimerEvent: {}
+[0.000071] (detections_2d) JobQueued: {'identifier': 'detections_2d', 'dependencies': OrderedDict()}
+[0.000123] (detections_2d) JobStarted: {'identifier': 'detections_2d'}
+[0.099278] (-) TimerEvent: {}
+[0.199478] (-) TimerEvent: {}
+[0.299662] (-) TimerEvent: {}
+[0.399848] (-) TimerEvent: {}
+[0.500023] (-) TimerEvent: {}
+[0.600203] (-) TimerEvent: {}
+[0.679817] (detections_2d) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ws/build/detections_2d/build', '--no-deps', 'symlink_data'], 'cwd': '/ws/build/detections_2d', 'env': {'WS': '/ws', 'HOSTNAME': '564fe5cc40a2', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/ws/build/detections_2d', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ws/build/detections_2d/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ws/install/detections_2d/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.700306] (-) TimerEvent: {}
+[0.800529] (-) TimerEvent: {}
+[0.900720] (-) TimerEvent: {}
+[0.982709] (detections_2d) StdoutLine: {'line': b'running develop\n'}
+[1.000813] (-) TimerEvent: {}
+[1.100973] (-) TimerEvent: {}
+[1.116523] (detections_2d) StdoutLine: {'line': b'running egg_info\n'}
+[1.117040] (detections_2d) StdoutLine: {'line': b'creating detections_2d.egg-info\n'}
+[1.117449] (detections_2d) StdoutLine: {'line': b'writing detections_2d.egg-info/PKG-INFO\n'}
+[1.117731] (detections_2d) StdoutLine: {'line': b'writing dependency_links to detections_2d.egg-info/dependency_links.txt\n'}
+[1.117841] (detections_2d) StdoutLine: {'line': b'writing entry points to detections_2d.egg-info/entry_points.txt\n'}
+[1.117927] (detections_2d) StdoutLine: {'line': b'writing requirements to detections_2d.egg-info/requires.txt\n'}
+[1.118012] (detections_2d) StdoutLine: {'line': b'writing top-level names to detections_2d.egg-info/top_level.txt\n'}
+[1.118097] (detections_2d) StdoutLine: {'line': b"writing manifest file 'detections_2d.egg-info/SOURCES.txt'\n"}
+[1.119578] (detections_2d) StdoutLine: {'line': b"reading manifest file 'detections_2d.egg-info/SOURCES.txt'\n"}
+[1.120433] (detections_2d) StdoutLine: {'line': b"writing manifest file 'detections_2d.egg-info/SOURCES.txt'\n"}
+[1.121777] (detections_2d) StdoutLine: {'line': b'running build_ext\n'}
+[1.122051] (detections_2d) StdoutLine: {'line': b'Creating /ws/install/detections_2d/lib/python3.10/site-packages/detections-2d.egg-link (link to .)\n'}
+[1.123131] (detections_2d) StdoutLine: {'line': b'Installing batch_2d script to /ws/install/detections_2d/lib/detections_2d\n'}
+[1.123402] (detections_2d) StdoutLine: {'line': b'Installing old_batch script to /ws/install/detections_2d/lib/detections_2d\n'}
+[1.123660] (detections_2d) StdoutLine: {'line': b'Installing serialized script to /ws/install/detections_2d/lib/detections_2d\n'}
+[1.123929] (detections_2d) StdoutLine: {'line': b'\n'}
+[1.124185] (detections_2d) StdoutLine: {'line': b'Installed /ws/build/detections_2d\n'}
+[1.124320] (detections_2d) StdoutLine: {'line': b'running symlink_data\n'}
+[1.124513] (detections_2d) StdoutLine: {'line': b'creating /ws/install/detections_2d/share/ament_index\n'}
+[1.124695] (detections_2d) StdoutLine: {'line': b'creating /ws/install/detections_2d/share/ament_index/resource_index\n'}
+[1.125010] (detections_2d) StdoutLine: {'line': b'creating /ws/install/detections_2d/share/ament_index/resource_index/packages\n'}
+[1.125093] (detections_2d) StdoutLine: {'line': b'symbolically linking /ws/build/detections_2d/resource/detections_2d -> /ws/install/detections_2d/share/ament_index/resource_index/packages\n'}
+[1.125192] (detections_2d) StdoutLine: {'line': b'symbolically linking /ws/build/detections_2d/package.xml -> /ws/install/detections_2d/share/detections_2d\n'}
+[1.125276] (detections_2d) StdoutLine: {'line': b'creating /ws/install/detections_2d/share/detections_2d/launch\n'}
+[1.125358] (detections_2d) StdoutLine: {'line': b'symbolically linking /ws/build/detections_2d/launch/all.launch.py -> /ws/install/detections_2d/share/detections_2d/launch\n'}
+[1.125439] (detections_2d) StdoutLine: {'line': b'symbolically linking /ws/build/detections_2d/launch/old_batch.launch.py -> /ws/install/detections_2d/share/detections_2d/launch\n'}
+[1.125521] (detections_2d) StdoutLine: {'line': b'symbolically linking /ws/build/detections_2d/launch/batch_2d.launch.py -> /ws/install/detections_2d/share/detections_2d/launch\n'}
+[1.125602] (detections_2d) StdoutLine: {'line': b'symbolically linking /ws/build/detections_2d/launch/serialized.launch.py -> /ws/install/detections_2d/share/detections_2d/launch\n'}
+[1.148735] (detections_2d) CommandEnded: {'returncode': 0}
+[1.163689] (detections_2d) JobEnded: {'identifier': 'detections_2d', 'rc': 0}
+[1.164140] (-) EventReactorShutdown: {}
