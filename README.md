@@ -35,6 +35,11 @@ ros2 launch foxglove_bridge foxglove_bridge_launch.xml address:=0.0.0.0 port:=87
 
 
 
+dpkg -l | egrep -i 'nvidia|cuda|libnvidia' > ~/nvidia-packages-before.txt
+ubuntu-drivers devices > ~/ubuntu-drivers-devices.txt
+
+
+
 ros2 launch golfcart_yolo2d yolo12_2d_detector.launch.py --ros-args \
   -p model:=yolo12l.pt
 
