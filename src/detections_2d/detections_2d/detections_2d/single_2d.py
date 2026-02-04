@@ -17,7 +17,7 @@ class YOLOv12DetectionNode(Node):
         super().__init__('yolov12_detection_node')
         
         # Declare parameters
-        self.declare_parameter('model_path', 'yolov12n.pt')
+        self.declare_parameter('model_path', 'yolov12x.pt')
         self.declare_parameter('camera_topic', '/camera/image_raw')
         self.declare_parameter('confidence_threshold', 0.5)
         self.declare_parameter('device', 'cuda')  # 'cuda' or 'cpu'
