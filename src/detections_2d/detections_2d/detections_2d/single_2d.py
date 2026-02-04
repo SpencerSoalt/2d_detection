@@ -61,7 +61,7 @@ class YOLOv12DetectionNode(Node):
 
         # Subscriber
         self.sub = self.create_subscription(
-            Image, camera_topic, self.camera_callback, image_qos)
+            Image, camera_topic, self.camera_callback, 10)
         
         # Publishers for detections
         self.detection_pub = self.create_publisher(
