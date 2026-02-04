@@ -31,7 +31,8 @@ ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 RUN python3 -m pip install --no-cache-dir --upgrade pip wheel && \
 # Cuda 11.8 GPU version of torch (uncomment to enable GPU support)
     python3 -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121 && \
-    python3 -m pip install --no-cache-dir nvidia-tensorrt && \
+    # python3 -m pip install --no-cache-dir nvidia-tensorrt && \
+    python3 -m pip install --no-cache-dir tensorrt-cu12
     python3 -m pip install --no-cache-dir ultralytics && \
     python3 -m pip uninstall -y opencv-python opencv-python-headless opencv-contrib-python || true && \
     python3 -m pip install --no-cache-dir --force-reinstall "numpy==1.26.4"
