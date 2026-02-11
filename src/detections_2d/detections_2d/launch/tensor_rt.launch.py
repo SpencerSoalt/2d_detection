@@ -18,7 +18,7 @@ def generate_launch_description():
         # Model configuration
         DeclareLaunchArgument(
             'model_path',
-            default_value='yolov12n.pt',
+            default_value='yolo12x.pt',
             description='Path to YOLO model file (.pt)'
         ),
         DeclareLaunchArgument(
