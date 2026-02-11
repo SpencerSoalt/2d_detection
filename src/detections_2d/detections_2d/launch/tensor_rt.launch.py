@@ -76,9 +76,9 @@ def generate_launch_description():
         
         # Node
         Node(
-            package='yolov12_detection',
-            executable='yolov12_tensorrt_node',
-            name='yolov12_tensorrt_node',
+            package='detections_2d',
+            executable='tensor_rt',
+            name='tensor_rt',
             output='screen',
             parameters=[{
                 'model_path': LaunchConfiguration('model_path'),
