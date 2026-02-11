@@ -23,7 +23,7 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'camera_topic',
-            default_value='/camera/image_raw',
+            default_value='/camera/camera/color/image_raw',
             description='Input camera topic'
         ),
         DeclareLaunchArgument(
