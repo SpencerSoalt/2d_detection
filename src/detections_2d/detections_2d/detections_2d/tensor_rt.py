@@ -26,10 +26,10 @@ class YOLOv12TensorRTNode(Node):
         super().__init__('yolov12_tensorrt_node')
         
         # Declare parameters
-        self.declare_parameter('model_path', 'yolov12n.pt')
-        self.declare_parameter('camera_topic', '/camera/image_raw')
+        self.declare_parameter('model_path', '/ws/yolov12x.pt')
+        self.declare_parameter('camera_topic', '/camera/camera/color/image_raw')
         self.declare_parameter('confidence_threshold', 0.5)
-        self.declare_parameter('classes_to_detect', ['person', 'car'])
+        self.declare_parameter('classes_to_detect', ['person', 'car', 'truck', 'bus'])
         
         # TensorRT-specific parameters
         self.declare_parameter('use_tensorrt', True)
@@ -83,7 +83,7 @@ class YOLOv12TensorRTNode(Node):
         # QoS profile for camera streams
         image_qos = QoSProfile(
             history=HistoryPolicy.KEEP_LAST,
-            depth=1,  # Reduced to prevent queue buildup
+            depth=1, 
             reliability=ReliabilityPolicy.BEST_EFFORT,
             durability=DurabilityPolicy.VOLATILE,
         )
@@ -103,6 +103,14 @@ class YOLOv12TensorRTNode(Node):
         self.frame_count = 0
         self.perf_timer = self.create_timer(5.0, self.log_performance)
         
+        # Fixed color per class (BGR order for OpenCV)
+        self._CLASS_COLORS = {
+            'person': ( 80,  80, 255),   # red
+            'car':    ( 80, 220,  80),   # green
+            'bus':    (255, 140,  80),   # blue
+            'truck':  (  0, 165, 255),   # orange
+        }
+
         self.get_logger().info(
             f'YOLOv12 TensorRT node initialized, subscribing to {camera_topic}')
     
@@ -115,10 +123,7 @@ class YOLOv12TensorRTNode(Node):
         
         if use_tensorrt:
             # Determine TensorRT engine path
-            precision_suffix = f'_{precision}'
-            if dynamic_batch:
-                precision_suffix += '_dynamic'
-            trt_path = model_path.with_suffix(f'{precision_suffix}.engine')
+            trt_path = model_path.with_suffix('.engine')
             
             if trt_path.exists():
                 # Load existing TensorRT engine
@@ -240,11 +245,37 @@ class YOLOv12TensorRTNode(Node):
         self.detection_pub.publish(detection_array)
     
     def publish_visualization(self, result, img, header):
-        """Publish annotated image for visualization."""
-        # Use YOLO's built-in plotting
-        annotated_img = result.plot()
-        
-        # Convert to ROS message
+        """Publish annotated image with per-class coloured bounding boxes."""
+        annotated_img = img.copy()
+
+        boxes = result.boxes
+        if boxes is not None and len(boxes) > 0:
+            boxes_xyxy = boxes.xyxy.cpu().numpy()
+            boxes_cls  = boxes.cls.cpu().numpy()
+            boxes_conf = boxes.conf.cpu().numpy()
+
+            for i in range(len(boxes)):
+                x1, y1, x2, y2 = boxes_xyxy[i].astype(int)
+                class_id   = int(boxes_cls[i])
+                conf       = float(boxes_conf[i])
+                class_name = self.class_names.get(class_id, str(class_id))
+
+                color = self._CLASS_COLORS.get(class_name, (200, 200, 200))
+
+                cv2.rectangle(annotated_img, (x1, y1), (x2, y2), color, 2)
+
+                label = f'{class_name} {conf:.2f}'
+                (tw, th), baseline = cv2.getTextSize(
+                    label, cv2.FONT_HERSHEY_SIMPLEX, 0.55, 1)
+                cv2.rectangle(annotated_img,
+                              (x1, y1 - th - baseline - 4),
+                              (x1 + tw, y1),
+                              color, cv2.FILLED)
+                cv2.putText(annotated_img, label,
+                            (x1, y1 - baseline - 2),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.55,
+                            (255, 255, 255), 1, cv2.LINE_AA)
+
         vis_msg = self.bridge.cv2_to_imgmsg(annotated_img, encoding='bgr8')
         vis_msg.header = header
         self.vis_pub.publish(vis_msg)
